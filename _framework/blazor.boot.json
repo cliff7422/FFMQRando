@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "FFMQWebAsm",
   "resources": {
-    "hash": "sha256-IYKdTFO01+mabdbrcjALDxWkDWNCIvr0tCjNtcD+KM4=",
+    "hash": "sha256-cO9UKjxb0Ksy+g4d6Lhk9KXf1RlG5FC3YlB77x4O+hI=",
     "fingerprinting": {
       "Blazored.LocalStorage.12n6dz54qr.wasm": "Blazored.LocalStorage.wasm",
       "Blazorise.Bootstrap5.jmh8kpauzr.wasm": "Blazorise.Bootstrap5.wasm",
@@ -11,8 +11,8 @@
       "Blazorise.Sidebar.e339fjii32.wasm": "Blazorise.Sidebar.wasm",
       "Blazorise.Snackbar.6svxc0vbf5.wasm": "Blazorise.Snackbar.wasm",
       "Blazorise.lrrkd2uri6.wasm": "Blazorise.wasm",
-      "FFMQRLib.8zp7wlsl1t.wasm": "FFMQRLib.wasm",
-      "FFMQWebAsm.pdwwxgwuy9.wasm": "FFMQWebAsm.wasm",
+      "FFMQRLib.z44zfk7or0.wasm": "FFMQRLib.wasm",
+      "FFMQWebAsm.7w8pdu641s.wasm": "FFMQWebAsm.wasm",
       "Microsoft.AspNetCore.Components.Forms.llgjrtvdbd.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.t8k03jq3cf.wasm": "Microsoft.AspNetCore.Components.wasm",
       "Microsoft.AspNetCore.Components.Web.2lg1uuz74s.wasm": "Microsoft.AspNetCore.Components.Web.wasm",
@@ -104,8 +104,8 @@
       "Blazorise.Sidebar.e339fjii32.wasm": "sha256-Fk0UJnvXVpHOIUNBmXHStcTaN4Iv9+LxldCUFSAF+D8=",
       "Blazorise.Snackbar.6svxc0vbf5.wasm": "sha256-2qRB8O8xWj+sffRXCde1tu6AtQa9R1XXXLm0c1kgVEQ=",
       "Blazorise.lrrkd2uri6.wasm": "sha256-kd5vvdUl5AgFN7FhXf5jML4y7q+np5FLFedzaLiZS9s=",
-      "FFMQRLib.8zp7wlsl1t.wasm": "sha256-vOzQOvbSFLbWNOah9fyLwkmf90aE9ZsJ4UPjiMPiFvA=",
-      "FFMQWebAsm.pdwwxgwuy9.wasm": "sha256-7eyy0hzpUMBNlJLWCPG/ci3ch9Ejqs1FKHJ4/rZugds=",
+      "FFMQRLib.z44zfk7or0.wasm": "sha256-TVHX4vUzh+7zNr7Rcd2smB7epnYP2OahvKQFG+nK40I=",
+      "FFMQWebAsm.7w8pdu641s.wasm": "sha256-R75SqnF8+15zJjX7ylNDUKWcR/bSR3PMsTa4gQJmEWc=",
       "Microsoft.AspNetCore.Components.Forms.llgjrtvdbd.wasm": "sha256-yZkRNhkduhAwRjdqmBFGpR5v6ISwOv1O5JSwrj5bawM=",
       "Microsoft.AspNetCore.Components.t8k03jq3cf.wasm": "sha256-fdVh4ojZ1FdOeMq/vQetuMmXW+Tey+hSR4ae+zme5bU=",
       "Microsoft.AspNetCore.Components.Web.2lg1uuz74s.wasm": "sha256-NhAIYBv8//gYFHQsbRtW8ReuPXCZELkE0o6Gr+tP3L4=",
