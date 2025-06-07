@@ -2,37 +2,42 @@ name: FFMQRando
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - uses: actions/checkout@master
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 6.0.x
+        dotnet-version: 9.0.x
     - name: Build
-      run: dotnet build FFMQWebAsm --configuration Release
-    - name: Publish webasm
-      run: dotnet publish FFMQWebAsm -c Release --no-build -o publishoutput
+      run: dotnet publish FFMQWebAsm -c Release
+    - name: Store  build artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: FFMQWebAsm
+        path: ${{ github.workspace }}/*
+#    - name: Publish webasm
+#      run: dotnet publish FFMQWebAsm -c Release --no-build -o publishoutput
 #    - name: UpdateVersion
 #      uses: datamonsters/replace-action@v2
 #      with:
 #         files: './wwwroot/service-worker.published.js'
 #         replacements: '%%CACHE_VERSION%%=${{ github.run_id }}'
-    - name: Publish to netlify
-      uses: nwtgck/actions-netlify@v1.2 
-      env: 
-        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      with:
-          publish-dir: './publishoutput/wwwroot'
-          production-branch: master
-          deploy-message: "Deploy from GitHub Actions"
-          enable-pull-request-comment: false
-          enable-commit-comment: false
-          overwrites-pull-request-comment: false
+#    - name: Publish to netlify
+#      uses: nwtgck/actions-netlify@v1.2 
+#      env: 
+#        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+#        NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+#      with:
+#          publish-dir: './publishoutput/wwwroot'
+#         production-branch: master
+#         deploy-message: "Deploy from GitHub Actions"
+#         enable-pull-request-comment: false
+#         enable-commit-comment: false
+#          overwrites-pull-request-comment: false
