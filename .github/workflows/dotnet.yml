@@ -16,7 +16,7 @@ jobs:
       with:
         dotnet-version: 9.0.x
     - name: Restore
-      run: dotnet workload restore FFMQWebAsm
+      run: dotnet workload install wasm-tools
     - name: Build
       run: dotnet publish FFMQWebAsm -c Release
     - name: Store  build artifacts
